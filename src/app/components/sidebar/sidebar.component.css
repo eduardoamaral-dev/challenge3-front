@@ -1,0 +1,23 @@
+.sidebar {
+  width: 100px;
+  height: 100vw;
+  position:absolute;
+  background-color: #007DB8;
+  color: white;
+  margin:0;
+  padding-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

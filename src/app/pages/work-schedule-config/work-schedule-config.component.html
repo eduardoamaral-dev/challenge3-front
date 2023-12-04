@@ -1,0 +1,15 @@
+<form [formGroup]="myForm" (submit)="updateWorkSchedule()">
+  <label for="startOfWork">Início de jornada</label>
+  <input id="startOfWork" name="startOfWork" type="time">
+
+  <label for="breakTime">Intervalo</label>
+  <input id="breakTime" name="breakTime" type="time">
+
+  <label for="backToWork">Fim do intervalo</label>
+  <input id="backToWork" name="backToWork" type="time">
+
+  <label for="endOfWork">Fim de jornada</label>
+  <input id="endOfWork" name="endOfWork" type="time">
+
+  <button type="submit">Enviar</button>
+</form>
