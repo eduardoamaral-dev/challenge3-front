@@ -1,0 +1,23 @@
+.body {
+    padding: 10px;
+}
+
+.timeForm {
+    margin-left: 10px;
+    font-size: large;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.innerForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.successBtn {
+    background-color: green;
+}
+

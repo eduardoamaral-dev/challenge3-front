@@ -26,6 +26,15 @@ export class WorkScheduleConfigComponent {
     this.service.testNotification()
   }
 
+  setDefault(){
+    this.myForm.setValue({
+      startOfWork: "08:00",
+      breakTime: "12:00",
+      backToWork: "13:00",
+      endOfWork: "15:00",
+    })
+  }
+
   updateWorkSchedule(){
     this.service.updateWorkSchedule({
       startOfWork: this.myForm.getRawValue().startOfWork,

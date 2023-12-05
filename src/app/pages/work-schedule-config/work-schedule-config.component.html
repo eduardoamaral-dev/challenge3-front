@@ -1,15 +1,27 @@
-<form [formGroup]="myForm" (submit)="updateWorkSchedule()">
-  <label for="startOfWork">Início de jornada</label>
-  <input id="startOfWork" name="startOfWork" formControlName="startOfWork" type="time">
+<div class="body">
+  <form [formGroup]="myForm" (submit)="updateWorkSchedule()" class="timeForm">
+    <div class="innerForm">
+      <label for="startOfWork">Start</label>
+      <input id="startOfWork" name="startOfWork" formControlName="startOfWork" type="time" class="timepicker">
+    </div>
 
-  <label for="breakTime">Intervalo</label>
-  <input id="breakTime" name="breakTime" formControlName="breakTime" type="time">
+    <div class="innerForm">
+      <label for="breakTime">Break</label>
+      <input id="breakTime" name="breakTime" formControlName="breakTime" type="time" class="timepicker">
+    </div>
 
-  <label for="backToWork">Fim do intervalo</label>
-  <input id="backToWork" name="backToWork" formControlName="backToWork" type="time">
+    <div class="innerForm">
+      <label for="backToWork">End of break</label>
+      <input id="backToWork" name="backToWork" formControlName="backToWork" type="time" class="timepicker">
+    </div>
 
-  <label for="endOfWork">Fim de jornada</label>
-  <input id="endOfWork" name="endOfWork" formControlName="endOfWork" type="time">
+    <div class="innerForm">
+      <label for="endOfWork">End</label>
+      <input id="endOfWork" name="endOfWork" formControlName="endOfWork" type="time" class="timepicker">
+    </div>
 
-  <button type="submit">Enviar</button>
-</form>
+    <button type="submit" class="successBtn">Save</button>
+  </form>
+
+  <button style="background-color: darkgrey;" id="setDefaultBtn" (click)="setDefault()">Set Default</button>
+</div>
